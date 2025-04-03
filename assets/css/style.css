@@ -15,7 +15,6 @@ body {
   background-color: var(--color-base2);
   color: var(--color-body);
   font-family: var(--font-base), sans-serif;
-   
 }
 body::-webkit-scrollbar {
   display: none;
@@ -113,14 +112,13 @@ img {
   .navbar {
     min-height: 100vh;
     width: var(--sidbar-width);
-    background: linear-gradient(rgba(17, 139, 245, 0.9), #0d80f2),
+    background: linear-gradient(rgba(17, 139, 245, 0.8), #0d80f2),
       url(../images/slider.jpg);
     background-size: cover;
     background-position: center;
   }
   .navbar-brand img {
     border-radius: 20px;
-     
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   }
 
