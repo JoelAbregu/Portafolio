@@ -45,10 +45,14 @@ img {
 }
 
 .text-brand {
-    background-image: linear-gradient(to top, var(--color-brand), var(--color-brand2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  background-image: linear-gradient(
+    to top,
+    var(--color-brand),
+    var(--color-brand2)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .bg-base {
@@ -106,14 +110,13 @@ img {
 
 .form-group textarea {
   resize: none;
- 
 }
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
     width: var(--sidbar-width);
-    background: linear-gradient(rgba(17, 139, 245, 0.8), #0d80f2),
-      url(../images/slider.jpg);
+    background: linear-gradient(rgba(17, 139, 245, 0.75), #0d80f2),
+      url(../images/slider.webp);
     background-size: cover;
     background-position: center;
   }
@@ -201,7 +204,6 @@ img {
 }
 
 /* SOCIAL ICONS */
- 
 
 .social-icons a {
   width: 40px;
@@ -240,7 +242,7 @@ img {
   }
 }
 @media screen and (min-width: 1150px) {
-   .about__skills-title {
+  .about__skills-title {
     text-align: initial;
   }
   .about__skills-content {
