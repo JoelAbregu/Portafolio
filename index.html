@@ -50,6 +50,8 @@
     </nav>
     <!-- //NAVBAR -->
 
+
+
     <!-- CONTENT WRAPPER -->
     <div id="content-wrapper">
         <!-- HOME -->
@@ -66,7 +68,8 @@
                             así como en la creación de aplicaciones móviles con Flutter y el manejo de bases de datos
                             con MySQL.</p>
                         <div data-aos="fade-up" data-aos-delay="600">
-                            <a href="./assets/pdf/JoelAbregu-CV.pdf" download="JoelAbregu-CV.pdf" class="btn btn-brand me-3">Descargar CV</a>
+                            <a href="./assets/pdf/JoelAbregu-CV.pdf" download="JoelAbregu-CV.pdf"
+                                class="btn btn-brand me-3">Descargar CV</a>
                             <a href="tel:977470126" class="link-custom">Celular: 977470126</a>
                         </div>
                     </div>
@@ -158,8 +161,8 @@
                                     gestión de incidencias.</p>
                                 <a href="https://github.com/JoelAbregu/botDeteccionTickets" class="link-custom me-4"
                                     target="_blank">Ver en github</a>
-                                <a href="https://drive.google.com/file/d/1g4YNu1ODp5vxaKKZC0fuBRmG3twLLwyI/view?usp=sharing"
-                                    class="link-custom" target="_blank">Ver video</a>
+                                <a href="#" class="link-custom open-video-modal" data-video="assets/videos/Bot.mp4">Ver
+                                    video</a>
                             </div>
                         </div>
                     </div>
@@ -178,8 +181,8 @@
                                     base de datos local.</p>
                                 <a href="https://github.com/JoelAbregu/Crab" class="link-custom me-4"
                                     target="_blank">Ver en github</a>
-                                <a href="https://drive.google.com/file/d/10DqQLEytyeyygDBNBySEfG-a4gdmcI4Y/view?usp=sharing"
-                                    class="link-custom" target="_blank">Ver video</a>
+                                <a href="#" class="link-custom open-video-modal" data-video="assets/videos/Crab.mp4">Ver
+                                    video</a>
                             </div>
                         </div>
                     </div>
@@ -196,8 +199,10 @@
                                     trabajar con base de datos local y gestión de estado.</p>
                                 <a href="https://github.com/JoelAbregu/Cinemapedia" class="link-custom me-4"
                                     target="_blank">Ver en github</a>
-                                <a href="https://drive.google.com/file/d/1yvnbDA7Vg1pSW81sgNP8H2fE-CTuKGhZ/view?usp=sharing"
-                                    class="link-custom" target="_blank">Ver video</a>
+
+                                <a href="#" class="link-custom open-video-modal"
+                                    data-video="assets/videos/Cinemapedia.mp4">Ver
+                                    video</a>
                             </div>
                         </div>
                     </div>
@@ -396,14 +401,28 @@
             </div>
         </footer>
         <!-- //FOOTER -->
-
     </div>
+
+    <!-- MODAL VIDEO POPUP -->
+    <div id="videoModal" class="modal-custom">
+        <div class="modal-content-custom">
+            <span class="close-modal">&times;</span>
+            <video id="modalVideo" width="100%" controls>
+                <source src="" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </div>
+    <!-- //MODAL VIDEO POPUP -->
+
+
 
     <!-- //CONTENT WRAPPER -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 

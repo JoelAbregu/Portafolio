@@ -16,6 +16,7 @@ body {
   color: var(--color-body);
   font-family: var(--font-base), sans-serif;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -45,11 +46,9 @@ img {
 }
 
 .text-brand {
-  background-image: linear-gradient(
-    to top,
-    var(--color-brand),
-    var(--color-brand2)
-  );
+  background-image: linear-gradient(to top,
+      var(--color-brand),
+      var(--color-brand2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -111,6 +110,7 @@ img {
 .form-group textarea {
   resize: none;
 }
+
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
@@ -120,6 +120,7 @@ img {
     background-size: cover;
     background-position: center;
   }
+
   .navbar-brand img {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
@@ -203,8 +204,54 @@ img {
   height: 44px;
 }
 
-/* SOCIAL ICONS */
+/*MODAL*/
 
+.modal-custom {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-custom {
+  position: relative;
+  max-width: 800px;
+  width: 90vw;
+  background: transparent;
+  padding: 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 5px;
+  right: 24px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color 0.3s;
+  background: transparent;
+  border: none;
+}
+
+.close-modal:hover {
+  color: #d220ffd9;
+}
+
+
+/* SOCIAL ICONS */
 .social-icons a {
   width: 40px;
   height: 40px;
@@ -221,15 +268,18 @@ img {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .about__skills-img {
   width: 35px;
   transition: transform 0.4s;
   margin-bottom: 2rem;
   margin-right: 1rem;
 }
+
 .about__skills-img:hover {
   transform: translateY(-0.5rem);
 }
+
 .about__skills-content {
   grid-template-columns: repeat(5, max-content);
   justify-content: center;
@@ -241,15 +291,24 @@ img {
     grid-template-columns: repeat(4, max-content);
   }
 }
+
 @media screen and (min-width: 1150px) {
   .about__skills-title {
     text-align: initial;
   }
+
   .about__skills-content {
     grid-template-columns: repeat(7, max-content);
     justify-content: initial;
   }
+
   .about__skills-img {
     width: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content-custom {
+    max-width: 95vw;
   }
 }
